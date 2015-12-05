@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>mon</string>
+		<string>evt</string>
+	</array>
+	<key>name</key>
+	<string>EPL</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.epl</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.epl</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Variables like $PARAM1, $TM_SELECTION...</string>
+			<key>match</key>
+			<string>(action)\s(\w+)</string>
+			<key>name</key>
+			<string>entity.name.function</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.epl</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.epl</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Variables like $PARAM1, $TM_SELECTION...</string>
+			<key>match</key>
+			<string>(event)\s(\w+)</string>
+			<key>name</key>
+			<string>entity.type.function</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.epl</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.epl</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Variables like $PARAM1, $TM_SELECTION...</string>
+			<key>match</key>
+			<string>(monitor)\s(\w+)</string>
+			<key>name</key>
+			<string>entity.type.function</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>definitions</string>
+			<key>match</key>
+			<string>(action|event|monitor|package|returns|using)</string>
+			<key>name</key>
+			<string>keyword.other.epl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>EPL types</string>
+			<key>match</key>
+			<string>(string|integer|float|boolean)</string>
+			<key>name</key>
+			<string>storage.type.epl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Strings</string>
+			<key>match</key>
+			<string>(\".*\")</string>
+			<key>name</key>
+			<string>string.quoted.epl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Logging and numeric constants</string>
+			<key>match</key>
+			<string>(\d+|DEBUG|WARN|INFO|ERROR|CRIT)</string>
+			<key>name</key>
+			<string>constant.numeric.epl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Constants in EPL</string>
+			<key>match</key>
+			<string>(true|false|constant)</string>
+			<key>name</key>
+			<string>constant.language.epl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Control keywords</string>
+			<key>match</key>
+			<string>(\b(return|for|new|at|if|else|then|not|log|self|and|or|on|all|in)\b)</string>
+			<key>name</key>
+			<string>keyword.control.epl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Comment lines</string>
+			<key>match</key>
+			<string>(//.+)</string>
+			<key>name</key>
+			<string>comment.line.epl</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Type keywords1</string>
+			<key>match</key>
+			<string>(sequence|dictionary)</string>
+			<key>name</key>
+			<string>storage.type.generic.epl</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.epl</string>
+	<key>uuid</key>
+	<string>f400c840-c04b-4c2a-a386-430379d693a1</string>
+</dict>
+</plist>
