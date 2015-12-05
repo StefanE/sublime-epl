@@ -1,0 +1,58 @@
+name: EPL
+scopeName: source.epl
+fileTypes: [mon, evt]
+uuid: f400c840-c04b-4c2a-a386-430379d693a1
+
+patterns:
+- comment: Variables like $PARAM1, $TM_SELECTION...
+  name: entity.name.function
+  match: (action)\s(\w+)
+  captures:
+    '1': {name: keyword.other.epl}
+    '2': {name: entity.name.function.epl}
+
+- comment: Variables like $PARAM1, $TM_SELECTION...
+  name: entity.type.function
+  match: (event)\s(\w+)
+  captures:
+    '1': {name: keyword.other.epl}
+    '2': {name: entity.name.function.epl}
+
+- comment: Variables like $PARAM1, $TM_SELECTION...
+  name: entity.type.function
+  match: (monitor)\s(\w+)
+  captures:
+    '1': {name: keyword.other.epl}
+    '2': {name: entity.name.function.epl}
+
+- comment: definitions
+  name: keyword.other.epl
+  match: (action|event|monitor|package|returns|using)
+
+- comment: EPL types
+  name: storage.type.epl
+  match: (string|integer|float|boolean)
+
+- comment: Strings
+  name: string.quoted.epl
+  match: (\".*\")
+
+- comment: Logging and numeric constants
+  name: constant.numeric.epl
+  match: (\d+|DEBUG|WARN|INFO|ERROR|CRIT)
+
+- comment: Constants in EPL
+  name: constant.language.epl
+  match: (true|false|constant)
+
+- comment: Control keywords
+  name: keyword.control.epl
+  match: (\b(return|for|new|at|if|else|then|not|log|self|and|or|on|all|in)\b)
+
+- comment: Comment lines
+  name: comment.line.epl
+  match: (//.+)
+
+- comment: Type keywords1
+  name: storage.type.generic.epl
+  match: (sequence|dictionary)
