@@ -110,7 +110,7 @@
 			<key>comment</key>
 			<string>Constants in EPL</string>
 			<key>match</key>
-			<string>(true|false|constant|wildcard)</string>
+			<string>(true|false|constant)</string>
 			<key>name</key>
 			<string>constant.language.epl</string>
 		</dict>
@@ -118,7 +118,7 @@
 			<key>comment</key>
 			<string>Control keywords</string>
 			<key>match</key>
-			<string>(\b(return|for|new|at|if|else|then|not|log|self|and|or|on|all|in)\b)</string>
+			<string>(\b(return|for|new|at|if|else|then|not|log|self|and|or|on|all|in|route|emit|enqueue|send)\b)</string>
 			<key>name</key>
 			<string>keyword.control.epl</string>
 		</dict>

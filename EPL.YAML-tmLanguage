@@ -43,11 +43,11 @@ patterns:
 
 - comment: Constants in EPL
   name: constant.language.epl
-  match: (true|false|constant|wildcard)
+  match: (true|false|constant)
 
 - comment: Control keywords
   name: keyword.control.epl
-  match: (\b(return|for|new|at|if|else|then|not|log|self|and|or|on|all|in)\b)
+  match: (\b(return|for|new|at|if|else|then|not|log|self|and|or|on|all|in|route|emit|enqueue|send)\b)
 
 - comment: Comment lines
   name: comment.line.epl
