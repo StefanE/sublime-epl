@@ -110,7 +110,7 @@
 			<key>comment</key>
 			<string>Constants in EPL</string>
 			<key>match</key>
-			<string>(true|false|constant)</string>
+			<string>(true|false|constant|wildcard)</string>
 			<key>name</key>
 			<string>constant.language.epl</string>
 		</dict>

@@ -43,7 +43,7 @@ patterns:
 
 - comment: Constants in EPL
   name: constant.language.epl
-  match: (true|false|constant)
+  match: (true|false|constant|wildcard)
 
 - comment: Control keywords
   name: keyword.control.epl
